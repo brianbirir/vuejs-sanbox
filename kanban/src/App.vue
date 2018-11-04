@@ -1,17 +1,25 @@
 <template>
   <div id="app">
     <div class="page-header">
-      <h1>Kanban Board</h1>
-      <p class="lead">Kanban board example, written in Vue.js</p>
+      <menu-bar></menu-bar>
+      <h1>Risk Register</h1>
+      <p class="lead">Kanban board example for Risk Register</p>
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
+
+import MenuBar from '@/components/MenuBar'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'menu-bar': MenuBar
+  }
 }
+
 </script>
 
 <style>
